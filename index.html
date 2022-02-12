@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Animverse is a metaverse play-to-earn MMORPG game inspired by global phenomenon Animes/Mangas such as Dragon Ball, Naruto, OnePiece. The game is based on Blockchain technology and NFTs, with the visionary to provide players an ecosystem of playing, investing, and expanding their creativity by create their own NFTs items.
+      In Animverse, gamers will turn into a hero and join a guild to conquer different planets - where they can exploit the recourses by staking tokens and farming for NFTs items."
+    />
+    <meta property="og:title" content="Metaverse Play-to-earn MMORPG Game" />
+    <meta property="og:url" content="https://animverse.com/" />
+    <title>Animverse Metavese Play-to-earn MMORPG Game</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./assets/styles/index.css?v=2.1.1" />
+    <link rel="stylesheet" href="./assets/styles/animate.min.css?v=2.1.1" />
+    <link rel="stylesheet" href="./assets/styles/fullpage.css?v=2.1.1" />
+    <link rel="stylesheet" href="./assets/styles/owl.carousel.min.css?v=2.1.1" />
+    <script src="./assets/js/jquery-3.6.0.min.js?v=2.1.1"></script>
+    <script src="./assets/js/wow.min.js?v=2.1.1"></script>
+    <script src="./assets/js/fullpage.js?v=2.1.1"></script>
+    <script src="./assets/js/owl.carousel.min.js?v=2.1.1"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="loading">
+      <img src="./assets/img/run.gif" alt="" />
+      <p>Loading ...</p>
+    </div>
+    <header class="header">
+      <div class="token">
+        Official ANIMVERSE Token Contract (BEP-20):
+        <a
+          href="https://bscscan.com/address/0x7470ff44a57fce4b7413f31fdc9b625ff58dbb9c"
+          target="_blank"
+          >0x7470ff44a57fce4b7413f31fdc9b625ff58dbb9c</a
+        >
+      </div>
+      <ul class="menu">
+        <img src="./assets/img/logo.png" alt="Animverse" />
+        <div class="menu-list">
+          <a class="item" data-menuanchor="home" href="#home">Home</a>
+          <a class="item" data-menuanchor="story" href="#story">Story</a>
+          <a class="item" data-menuanchor="game-play" href="#game-play"
+            >Gameplay</a
+          >
+          <a class="item" data-menuanchor="nft" href="#nft">NFT Items</a>
+          <a class="item" data-menuanchor="roadmap" href="#roadmap">Roadmap</a>
+          <a class="item" data-menuanchor="team" href="#team">Team</a>
+          <a class="item" data-menuanchor="partner" href="#partner">Partner</a>
+          <div class="dropdown">
+            <button class="item" onclick="openDropdown()">
+              Pappers
+              <img src="./assets/img/arrow_down.png" alt="" />
+            </button>
+            <div class="dropdown-content">
+              <a
+                target="_blank"
+                onclick="openDropdown()"
+                href="https://docsend.com/view/u8czdmiugcd9v36m"
+                >Pitchdeck</a
+              >
+              <a
+                target="_blank"
+                onclick="openDropdown()"
+                href="https://animverse.gitbook.io/whitepaper"
+                >White Paper</a
+              >
+            </div>
+          </div>
+        </div>
+        <a
+          class="right"
+          href="https://marketplace.animverse.com/"
+          target="_blank"
+          >MARKET PLACE</a
+        >
+        <button class="bar" onclick="openMobileMenu()">
+          <img src="./assets/img/bar.png" alt="" />
+        </button>
+      </ul>
+    </header>
+    <div class="mobile-menu wow bounceInRight">
+      <i onclick="closeMobileMenu()" class="fa fa-times" aria-hidden="true"></i>
+      <div class="menu-list">
+        <a
+          class="item"
+          onclick="closeMobileMenu()"
+          data-menuanchor="home"
+          href="#home"
+          >Home</a
+        >
+        <a
+          class="item"
+          onclick="closeMobileMenu()"
+          data-menuanchor="story"
+          href="#story"
+          >Story</a
+        >
+        <a
+          class="item"
+          onclick="closeMobileMenu()"
+          data-menuanchor="game-play"
+          href="#game-play"
+          >Gameplay</a
+        >
+        <a
+          class="item"
+          onclick="closeMobileMenu()"
+          data-menuanchor="nft"
+          href="#nft"
+          >NFT Items</a
+        >
+        <a
+          class="item"
+          onclick="closeMobileMenu()"
+          data-menuanchor="roadmap"
+          href="#roadmap"
+          >Roadmap</a
+        >
+        <a
+          class="item"
+          onclick="closeMobileMenu()"
+          data-menuanchor="team"
+          href="#team"
+          >Team</a
+        >
+        <a
+          class="item"
+          onclick="closeMobileMenu()"
+          data-menuanchor="partner"
+          href="#partner"
+          >Partner</a
+        >
+        <button class="item" onclick="openDropdownMobi()">
+          Pappers
+          <img src="./assets/img/arrow_down.png" alt="" />
+        </button>
+        <div class="dropdown-content wow backInDown" data-wow-duration="2s">
+          <a
+            class="item"
+            target="_blank"
+            onclick="closeMobileMenu()"
+            href="https://docsend.com/view/u8czdmiugcd9v36m"
+            >Pitchdeck</a
+          >
+          <br />
+          <a
+            class="item"
+            target="_blank"
+            onclick="closeMobileMenu()"
+            href="https://animverse.gitbook.io/whitepaper"
+            >White Paper</a
+          >
+        </div>
+      </div>
+      <a class="right" href="https://marketplace.animverse.com/" target="_blank"
+        >MARKET PLACE</a
+      >
+    </div>
+    <main id="fullPage">
+      <div class="section home">
+        <video
+          autoplay
+          loop
+          muted
+          playsinline
+          id="bannerVideo"
+          preload
+          poster=""
+          class="wow fadeIn"
+        >
+          <source src="./assets/img/backGround/banner.mp4" type="video/mp4" />
+        </video>
+        <div class="bottom">
+          <img class="logo" src="./assets/img/logo2.png" alt="" />
+          <div>
+            <p>
+              An Anime-inspired MMORPG NFT game <br /><span>Coming soon</span>
+            </p>
+            <p>
+              <a
+                href="./app/testnet/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./assets/img/ios.png" alt="" />
+              </a>
+              <a
+                href="./app/testnet/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./assets/img/android.png" alt="" />
+              </a>
+              <a
+                href="./app/testnet/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./assets/img/pc.png" alt="" />
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="section hot-news">
+        <h2>
+          <img src="./assets/img/h2Left.png" alt="" />
+          Hot News
+          <img src="./assets/img/h2Right.png" alt="" />
+        </h2>
+        <div class="owl-carousel news_slider">
+          <div class="item">
+            <a
+              href="https://twitter.com/BinanceChain/status/1485972580041433089"
+              target="_blank"
+              ><img src="./assets/img/hot-news/twitter.png"
+            /></a>
+            <div class="title wow fadeIn">
+              ANIMVERSE HAS ENTERED BINANCE’S #MVBIV INCUBATION PROGRAM
+            </div>
+          </div>
+          <div class="item">
+            <a
+              href="https://finance.yahoo.com/news/meet-animverse-vietnamese-mmorpg-game-124500090.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/img/hot-news/yahoo.png" />
+            </a>
+            <div class="title">
+              Vietnamese MMORPG Game Project Will Bring Players' Childhood Back
+            </div>
+          </div>
+          <div class="item">
+            <a
+              href="https://twitter.com/HelloAnimverse/status/1482909084492132354"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/img/hot-news/twitter2.png" />
+            </a>
+            <div class="title wow fadeIn">
+              ANIMVERSE THANKFUL BOXES ARE ALREADY SOLD OUT!
+            </div>
+          </div>
+          <div class="item">
+            <a
+              href="https://twitter.com/HelloAnimverse/status/1481912879096156164"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./assets/img/hot-news/twitter3.png" />
+            </a>
+            <div class="title wow fadeIn">
+              THE LEAD INVESTOR FOR OUR SEED ROUND: @DoraHacks
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section trailer">
+        <h2>
+          <img src="./assets/img/h2Left.png" alt="" />
+          Trailer
+          <img src="./assets/img/h2Right.png" alt="" />
+        </h2>
+        <div class="container wow fadeInUp">
+          <img src="./assets/img/frame-trailer.png" alt="" />
+          <img class="top-right" src="./assets/img/trailerTopRight.png" alt="" />
+          <video
+            autoplay
+            loop
+            muted
+            playsinline
+            id="trailerVideo"
+            preload
+            poster=""
+            class="wow fadeIn"
+          >
+            <source src="./assets/img/trailer2.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+      <div class="section story">
+        <h2>
+          <img src="./assets/img/h2Left.png" alt="" />
+          Story
+          <img src="./assets/img/h2Right.png" alt="" />
+        </h2>
+        <p class="wow fadeInUp">
+          Animverse is a metaverse play-to-earn MMORPG game inspired by global
+          phenomenon Animes/Mangas like Dragon Ball, Naruto, OnePiece. The game
+          is based on Blockchain technology and NFTs, empowering the players,
+          artists and creators to the next level of Role Playing Game.
+        </p>
+        <div>
+          <img class="left" src="./assets/img/storyLeft.gif" alt="" />
+          <img class="right" src="./assets/img/storyRight.gif" alt="" />
+        </div>
+      </div>
+      <div class="section game-play">
+        <h2>
+          <img src="./assets/img/h2Left.png" alt="" />
+          Game play
+          <img src="./assets/img/h2Right.png" alt="" />
+        </h2>
+        <div class="owl-carousel game_slider">
+          <div class="item">
+            <img src="./assets/img/game-play/game-2.png" alt="" />
+            <div class="title wow fadeIn">
+              <img src="./assets/img/fight2.png" alt="" />
+              Guild: Staking, Farming, Auction
+            </div>
+          </div>
+          <div class="item">
+            <img src="./assets/img/game-play/game-1.png" alt="" />
+            <div class="title">
+              <img src="./assets/img/fight.png" alt="" />
+              PVE: Story, World Boss, Metawar, Dungeon
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section nft-items">
+        <h2>
+          <img src="./assets/img/h2Left.png" alt="" />
+          Nft Items
+          <img src="./assets/img/h2Right.png" alt="" />
+        </h2>
+        <div class="owl-carousel nft_slider">
+          <div class="item">
+            <img src="./assets/img/nft-items/nft-1.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="./assets/img/nft-items/nft-2.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="./assets/img/nft-items/nft-3.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="./assets/img/nft-items/nft-4.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="./assets/img/nft-items/nft-5.png" alt="" />
+          </div>
+        </div>
+        <p class="wow fadeInUp">
+          To own items with high star level, players can either open Box, or use
+          tokens plus game materials (NFTs) to perform evolution
+        </p>
+      </div>
+      <div class="section evolve">
+        <h2>
+          <img src="./assets/img/h2Left.png" alt="" />
+          evolve
+          <img src="./assets/img/h2Right.png" alt="" />
+        </h2>
+        <div class="owl-carousel evolve_slider">
+          <div class="item">
+            <img src="./assets/img/evolve/evolve-1.png" alt="" />
+            <img class="arrow" src="./assets/img/evolve/evolve_arrow.png" alt="" />
+            <img src="./assets/img/evolve/evolve-2.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="./assets/img/evolve/evolve-3.png" alt="" />
+            <img class="arrow" src="./assets/img/evolve/evolve_arrow.png" alt="" />
+            <img src="./assets/img/evolve/evolve-4.png" alt="" />
+          </div>
+          <div class="item">
+            <img src="./assets/img/evolve/evolve-5.png" alt="" />
+            <img class="arrow" src="./assets/img/evolve/evolve_arrow.png" alt="" />
+            <img src="./assets/img/evolve/evolve-6.png" alt="" />
+          </div>
+        </div>
+        <p class="wow fadeInUp">
+          To own items with high star level, players can either open Box, or use
+          tokens plus game materials (NFTs) to perform evolution
+        </p>
+      </div>
+      <div class="section characters">
+        <h2>
+          <img src="./assets/img/h2Left.png" alt="" />
+          characters
+          <img src="./assets/img/h2Right.png" alt="" />
+        </h2>
+        <img class="content wow fadeInUp" src="./assets/img/characters.png" alt="" />
+      </div>
+      <div class="section roadmap">
+        <h2>
+          <img src="./assets/img/h2Left.png" alt="" />
+          roadmap
+          <img src="./assets/img/h2Right.png" alt="" />
+        </h2>
+        <picture class="content">
+          <source media="(min-width:600px)" srcset="./assets/img/roadmap-pc.png" />
+          <img src="./assets/img/roadmap-mobile.png" alt="" />
+        </picture>
+      </div>
+      <div class="section team">
+        <h2>
+          <img src="./assets/img/h2Left.png" alt="" />
+          Team
+          <img src="./assets/img/h2Right.png" alt="" />
+        </h2>
+        <div class="container">
+          <div
+            class="item wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.2s"
+          >
+            <img src="./assets/img/team/team-01.png" alt="" />
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/huy-pham-van-a5285a134/"
+            >
+              <h6>
+                Huy Pham
+                <img src="./assets/img/open-in.png" alt="" />
+              </h6>
+            </a>
+            <p class="position">CEO</p>
+            <p class="experience">CEO of Teracom, CEO of Hitex Global</p>
+          </div>
+          <div
+            class="item wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.4s"
+          >
+            <img src="./assets/img/team/team-02.png" alt="" />
+            <a
+              href="https://www.linkedin.com/in/tungvu191/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h6>
+                Tung Vu
+                <img src="./assets/img/open-in.png" alt="" />
+              </h6>
+            </a>
+
+            <p class="position">CPO</p>
+            <p class="experience">
+              Founded 2 game studios, 10+ years in game industry
+            </p>
+          </div>
+          <div
+            class="item wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.6s"
+          >
+            <img src="./assets/img/team/team-03.png" alt="" />
+            <a
+              href="https://www.linkedin.com/in/tr%E1%BA%A7n-hi%E1%BA%BFu-540a8b174/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h6>
+                Hieu Tran
+                <img src="./assets/img/open-in.png" alt="" />
+              </h6>
+            </a>
+
+            <p class="position">CTO</p>
+            <p class="experience">
+              6+ years blockchain and security system, 10+ years in software
+              industry
+            </p>
+          </div>
+          <div
+            class="item wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.8s"
+          >
+            <img src="./assets/img/team/team-04.png" alt="" />
+            <a
+              href="https://www.linkedin.com/in/nam-ng-175689127/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h6>
+                Nam NG
+                <img src="./assets/img/open-in.png" alt="" />
+              </h6>
+            </a>
+
+            <p class="position">CMO</p>
+            <p class="experience">
+              Years of experience in corporate financeand growth
+            </p>
+          </div>
+          <div
+            class="item wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="1s"
+          >
+            <img src="./assets/img/team/team-05.png" alt="" />
+            <h6>
+              ZENNIE
+              <img src="./assets/img/open-in.png" alt="" />
+            </h6>
+            <p class="position">Head Of Partnership</p>
+          </div>
+          <div
+            class="item wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="1.2s"
+          >
+            <img src="./assets/img/team/team-06.png" alt="" />
+            <a
+              href="https://www.linkedin.com/in/duongnguyenhung/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><h6>
+                Hung Duong
+                <img src="./assets/img/open-in.png" alt="" /></h6
+            ></a>
+            <p class="position">Blockchain, Game Theory researcher</p>
+          </div>
+          <div
+            class="item wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="1.4s"
+          >
+            <img src="./assets/img/team/team-07.png" alt="" />
+            <a
+              href="https://www.linkedin.com/in/luat-dinh-nguyen/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h6>
+                Luat Nguyen
+                <img src="./assets/img/open-in.png" alt="" />
+              </h6>
+            </a>
+            <p class="position">Technical Leader</p>
+            <p class="experience">CTO of twogap</p>
+          </div>
+          <div
+            class="item wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="1.6s"
+          >
+            <img src="./assets/img/team/team-08.png" alt="" />
+            <a
+              href="https://www.linkedin.com/in/tuanhbeu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h6>
+                Tu Anh
+                <img src="./assets/img/open-in.png" alt="" />
+              </h6>
+            </a>
+            <p class="position">Blockchain R&D</p>
+            <p class="experience">Blockchain in twogap</p>
+          </div>
+          <div
+            class="item wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="1.8s"
+          >
+            <img src="./assets/img/team/team-09.png" alt="" />
+            <a
+              href="https://www.linkedin.com/in/%C4%91%E1%BB%93ng-c%C6%B0%E1%BB%9Dng-97208420b/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h6>
+                Cuong Dong
+                <img src="./assets/img/open-in.png" alt="" />
+              </h6>
+            </a>
+            <p class="position">Artist Leader</p>
+            <p class="experience">
+              5 years of experience as an Artist in game field
+            </p>
+          </div>
+          <div
+            class="item wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="2s"
+          >
+            <img src="./assets/img/team/team-010.png" alt="" />
+            <a
+              href="https://www.linkedin.com/in/thu-thao-nguyen-6853321a7"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h6>
+                Thao Nguyen
+                <img src="./assets/img/open-in.png" alt="" />
+              </h6>
+            </a>
+            <p class="position">Community Manager</p>
+            <p class="experience">Google digital 4.0</p>
+          </div>
+        </div>
+      </div>
+      <div class="section advisors">
+        <h2>
+          <img src="./assets/img/h2Left.png" alt="" />
+          advisors
+          <img src="./assets/img/h2Right.png" alt="" />
+        </h2>
+        <div class="container">
+          <div
+            class="item wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.2s"
+          >
+            <img src="./assets/img/team/team-011.png" alt="" />
+            <h6>Teddy nguyen</h6>
+            <p class="position">ADVISOR</p>
+            <p class="experience">
+              Co-founder DareNFT, Mindbank Group, SotaTek
+            </p>
+          </div>
+          <div
+            class="item wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.4s"
+          >
+            <img src="./assets/img/team/team-012.png" alt="" />
+            <h6>PAULUS PHAM</h6>
+            <p class="position">OPERATION ADVISOR</p>
+            <p class="experience">CLOVERS VENTURES FOUNDER</p>
+          </div>
+          <div
+            class="item wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.6s"
+          >
+            <img src="./assets/img/team/team-015.png" alt="" />
+            <h6>Kyle Nguyen</h6>
+            <p class="position">ADVISOR</p>
+            <p class="experience">Founder & CEO of VBC Ventures</p>
+          </div>
+          <div
+            class="item wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.8s"
+          >
+            <img src="./assets/img/team/team-013.png" alt="" />
+            <h6>Mai Xuan Dat</h6>
+            <p class="position">OPERATION ADVISOR</p>
+            <p class="experience">Founder VNOKRs, SEONGON</p>
+          </div>
+          <div
+            class="item wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="1s"
+          >
+            <img src="./assets/img/team/team-014.png" alt="" />
+            <h6>Sunny Nguyen</h6>
+            <p class="position">ADVISOR</p>
+            <p class="experience">
+              CMO of Step Hero Co-founder/CMO/General Partner of Xantus
+            </p>
+          </div>
+          <div
+            class="item wow fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="1.2s"
+          >
+            <img src="./assets/img/team/team-016.png" alt="" />
+            <h6>Steven</h6>
+            <p class="position">Mobile advisor</p>
+            <p class="experience">CEO/Founder of Polrare</p>
+          </div>
+        </div>
+      </div>
+      <div class="section partner">
+        <h2>
+          <img src="./assets/img/h2Left.png" alt="" />
+          Backers & Investors
+          <img src="./assets/img/h2Right.png" alt="" />
+        </h2>
+        <div class="container wow fadeInUp">
+          <a
+            href="https://darenft.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/img/partner/partner-01.png" alt="" />
+          </a>
+          <a
+            href="https://clovers.ventures/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="./assets/img/partner/partner-02.png" alt=""
+          /></a>
+          <a
+            href="https://hackerlink.io/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/img/partner/partner-03.png" alt="" />
+          </a>
+          <a
+            href="https://www.miraclegroup.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/img/partner/partner-04.png" alt="" />
+          </a>
+          <a
+            href="https://bscstation.finance/#/Dashboard"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/img/partner/partner-05.png" alt="" />
+          </a>
+          <a
+            href="https://xantus.network/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/img/partner/partner-06.png" alt="" />
+          </a>
+          <a
+            href="https://www.vbc.ventures/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/img/partner/partner-07.png" alt="" />
+          </a>
+          <a
+            href="https://research.onebit.capital/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/img/partner/partner-08.png" alt="" />
+          </a>
+          <a
+            href="https://avstarcapital.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="./assets/img/partner/partner-09.png" alt="" />
+          </a>
+          <img src="./assets/img/partner/partner-10.png" alt="" />
+          <img src="./assets/img/partner/partner-11.png" alt="" />
+          <img src="./assets/img/partner/partner-12.png" alt="" />
+        </div>
+        <img class="run" src="./assets/img/run.gif" alt="" />
+        <br />
+        <img class="update" src="./assets/img/updating.gif" alt="" />
+        <p>updating</p>
+      </div>
+      <div class="section footer">
+        <div class="container">
+          <div class="item wow fadeInUp" data-wow-delay="0.2s">
+            <h6>About</h6>
+            <a href="#game-play">Gameplay</a>
+            <a
+              href="https://animverse.gitbook.io/whitepaper/anim-token/tokennomics-insight"
+              target="_blank"
+              >Tokenomic</a
+            >
+            <a>Overview</a>
+          </div>
+          <div class="item wow fadeInUp" data-wow-delay="0.4s">
+            <h6>Social</h6>
+            <a href="https://t.me/AnimverseOfficial" target="_blank"
+              >Telegram</a
+            >
+            <a href="https://discord.com/invite/KjctZTmzcH" target="_blank"
+              >Discord</a
+            >
+            <a href="https://www.facebook.com/AnimverseNFT/" target="_blank"
+              >Facebook</a
+            >
+            <a href="https://twitter.com/HelloAnimverse" target="_blank"
+              >Twitter</a
+            >
+          </div>
+          <div class="item wow fadeInUp" data-wow-delay="0.6s">
+            <h6>FAQ</h6>
+            <a>Disclaimer</a>
+            <a>Terms And Conditions</a>
+          </div>
+        </div>
+        <img class="bottom-right" src="./assets/img/girl.png" alt="" />
+      </div>
+    </main>
+    <a target="_blank" class="telegram" href="https://t.me/AnimverseOfficial">
+      <img src="./assets/img/telegramBottomRight.png" alt="" />
+    </a>
+    <script src="./assets/js/index.js?v=2.1.1"></script>
+  </body>
+</html>
